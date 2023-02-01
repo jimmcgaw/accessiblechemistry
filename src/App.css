@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  text-align: left;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
-.App-link {
+.App a {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 20px;
+}
+
+.PeriodicTable {
+  margin: 15px;
+}
+
+.PeriodicTable .PeriodicTableRow {
+  display: flex;
+  justify-content: center;
+}
+
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell,
+.PeriodicTable .PeriodicTableRow .PeriodicTableCellSpacer {
+  height: 80px;
+  width: 50px;
+  display: inline-flex;
+  border: solid 1px transparent;
+  padding: 10px;
+}
+
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell {
+  border: solid 1px white;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  background-color: #282c34;
+  transition: all .2s ease-in-out;
+}
+
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell:hover {
+  transform: scale(1.1);
+}
+
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell .number {
+  text-align: right;
+}
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell .symbol {
+  font-size: 2em;
+  text-align: center;
+}
+.PeriodicTable .PeriodicTableRow .PeriodicTableCell .element-name {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.App footer {
+  text-align: right;
+}
+
+.App footer ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.App footer ul li {
+  display: inline;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 0.9em;
 }

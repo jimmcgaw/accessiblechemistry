@@ -1,0 +1,21 @@
+import React, { FC } from 'react';
+import elementsList from '../../data/Elements';
+
+interface PeriodicTableCellProps {
+  elementNumber: number;
+}
+
+const PeriodicTableCell: FC<PeriodicTableCellProps> = (props) => {
+  const elementNumber = props.elementNumber;
+  let elementData = elementsList[elementNumber];
+  
+  return (
+    <div className="PeriodicTableCell" data-testid="PeriodicTableCell">
+      <div className="number">{elementNumber}</div>
+      <div className="symbol">{elementData.symbol}</div>
+      <div className="element-name">{elementData.name}</div>
+    </div>
+  );
+};
+
+export default PeriodicTableCell;
