@@ -8,9 +8,13 @@ interface PeriodicTableProps {}
 const PeriodicTable: FC<PeriodicTableProps> = () => (
   <div className="PeriodicTable" data-testid="PeriodicTable">
     {table.map((elementNumbers, index) => {
-      return (
-        <PeriodicTableRow key={index} elementNumbers={elementNumbers} />
-      )
+      if (elementNumbers.length > 0) {
+        return (
+          <PeriodicTableRow key={index} elementNumbers={elementNumbers} />
+        )
+      } else {
+        return <div key={index} className="spacer-row"></div>
+      }
     })}
   </div>
 );

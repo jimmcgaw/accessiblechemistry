@@ -37,4 +37,30 @@ for (let i: number = 37; i < 55; i++) {
 
 table.push(row5);
 
+let row6: number[] = [55, 56, 0];
+for (let i: number = 72; i < 87; i++) {
+    row6.push(i);
+}
+table.push(row6);
+
+let row7: number[] = [87, 88, 0];
+for (let i: number = 104; i < 119; i++) {
+    row7.push(i);
+}
+table.push(row7);
+
+table.push([]);
+
+let row8: number[] = [0,0,0];
+for (let i: number = 57; i < 72; i++) {
+    row8.push(i);
+}
+table.push(row8);
+
+let row9: number[] = [0,0,0];
+for (let i: number = 89; i < 104; i++) {
+    row9.push(i);
+}
+table.push(row9);
+
 export default table;

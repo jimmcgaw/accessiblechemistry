@@ -1,9 +1,12 @@
 import elementData from './PeriodicTableJSON.json'
 
-type PeriodicElementData = {
+export type PeriodicElementData = {
     number: number;
     name: string;
     symbol: string;
+    category: string;
+    atomic_mass: number;
+    summary: string;
 }
 
 interface ElementsList {
