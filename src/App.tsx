@@ -64,6 +64,9 @@ function App() {
               <a href="/">Home</a>
             </li>
             <li>
+              <a href="https://github.com/jimmcgaw/accessiblechemistry">Github Repo</a>
+            </li>
+            <li>
               <a
               href="https://github.com/Bowserinator/Periodic-Table-JSON/blob/master/PeriodicTableJSON.json"
               target="_blank">Elements Data Source</a>
